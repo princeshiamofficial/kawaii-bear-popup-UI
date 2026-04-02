@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Bear Popup UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <button id="show-popup-btn" class="btn btn-primary">Open Popup</button>
+
+        <!-- Popup Overlay -->
+        <div id="popup-overlay" class="overlay hidden">
+            <!-- Popup Content -->
+            <div id="popup-content" class="popup-box-container fade-in">
+                
+                <!-- Bear Character Behind Box -->
+                <div class="bear-header bear-back">
+                    <svg width="140" height="100" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                        <!-- Ears -->
+                        <circle cx="40" cy="35" r="15" fill="white" stroke="#4A352F" stroke-width="3.5"/>
+                        <circle cx="100" cy="35" r="15" fill="white" stroke="#4A352F" stroke-width="3.5"/>
+                        
+                        <!-- Head -->
+                        <path d="M20 90C20 50 40 25 70 25C100 25 120 50 120 90" fill="white" stroke="#4A352F" stroke-width="3.5"/>
+                        
+                        <!-- Eyes -->
+                        <circle cx="58" cy="58" r="3" fill="#4A352F"/>
+                        <circle cx="82" cy="58" r="3" fill="#4A352F"/>
+                        
+                        <!-- Mouth (W shape) -->
+                        <path d="M65 68C65 69.5 66.5 71 68 71C69.5 71 70 69.5 70 68C70 69.5 70.5 71 72 71C73.5 71 75 69.5 75 68" stroke="#4A352F" stroke-width="2.5" stroke-linecap="round"/>
+                        
+                        <!-- Blush -->
+                        <circle cx="48" cy="65" r="5" fill="#FFD1D1" opacity="0.8"/>
+                        <circle cx="92" cy="65" r="5" fill="#FFD1D1" opacity="0.8"/>
+                    </svg>
+                </div>
+
+                <!-- Message Box Center -->
+                <div class="message-box">
+                    <div class="message-content">
+                        <h2>Hello there!</h2>
+                        <p>This is a pixel-perfect, kawaii bear popup UI built with Vanilla HTML, CSS, and SVG. It's responsive, animated, and looks identical to your reference.</p>
+                        <button id="close-popup-btn" class="btn btn-secondary">Close</button>
+                    </div>
+                </div>
+
+                <!-- Bear Paws in Front of Box -->
+                <div class="bear-paws bear-front">
+                    <svg width="140" height="100" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                        <!-- Paws (clutching the edge) -->
+                        <rect x="52" y="82" width="16" height="22" rx="8" fill="white" stroke="#4A352F" stroke-width="3.5"/>
+                        <rect x="72" y="82" width="16" height="22" rx="8" fill="white" stroke="#4A352F" stroke-width="3.5"/>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
